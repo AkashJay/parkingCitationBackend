@@ -1,0 +1,44 @@
+group 'VAUED'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'scala'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.apache.spark', name: 'spark-sql_2.11', version: '2.2.0'
+
+
+    compile group: 'org.scala-lang', name: 'scala-library', version: '2.11.11'
+    compile group: 'com.databricks', name: 'spark-csv_2.10', version: '1.1.0'
+
+    compile([
+            'org.apache.spark:spark-core_2.11:2.2.0',
+            'org.apache.spark:spark-streaming_2.11:2.2.0',
+            'org.apache.spark:spark-streaming-kafka_2.11:1.6.3',
+            'org.apache.logging.log4j:log4j-api:2.6.2',
+            'org.apache.logging.log4j:log4j-core:2.6.2',
+    ])
+
+    compile files('In/spark-core_2.11-1.5.2.logging.jar')
+//    compile files('In/spark-sql-kafka-0-10_2.11-2.1.0.cloudera1.jar')
+    compile group: 'org.apache.spark', name: 'spark-sql-kafka-0-10_2.11', version: '2.2.0'
+
+    // https://mvnrepository.com/artifact/org.apache.kafka/kafka-clients
+    compile group: 'org.apache.kafka', name: 'kafka-clients', version: '0.11.0.1'
+
+
+
+
+
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+
+

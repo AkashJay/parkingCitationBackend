@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.databricks:spark-csv_2.10:1.1.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.databricks/spark-csv_2.10/1.1.0/c45af58e28b617a5ac09c6080e0fe98e736fa486/spark-csv_2.10-1.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.databricks/spark-csv_2.10/1.1.0/8e6df0e74be45ca6f71b3040e16ff747928078aa/spark-csv_2.10-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
